@@ -1,0 +1,15 @@
+.container{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.completed{
+    color: skyblue;
+    text-decoration: line-through
+}
+
+.mainHeader{
+    /* background-color: #e74694; */
+    background-image: url('./banner.png');
+    background-size: 400px;
+}

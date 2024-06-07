@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo app</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./utility.css">
+    <script src="https://kit.fontawesome.com/f54945268a.js" crossorigin="anonymous"></script>
+    <script src="./app.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="mainHeader bg-slate-900">
+            <div class="container p-2 h-80 flex justify-center flex-col items-center">
+                <!-- todo-form -->
+                <form id="todo-form">
+                    <h1 class="text-4xl text-white my-5 font-semibold time">Today</h1>
+
+                    <input type="text" id="mainInput" placeholder="e.g. Buy groceries" class="p-4 w-80 rounded-sm bg-slate-800 outline-none text-white">
+                    <input type="submit" value="Add task" id="addTaskbtn" class="bg-orange-400 text-white p-4 rounded-sm font-semibold cursor-pointer hover:bg-orange-500 transition all ease-in-out">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="mainContent bg-white h-screen">
+        <div class="container flex justify-center items-">
+            <ul class="stats flex gap-16 relative my-4">
+                <li class="flex justify-center">
+                    <span class="bg-slate-900 text-white p-1 rounded-l-md tracking-wider myli">Remaining</span>
+                    <span class="bg-sky-600 text-white p-1 rounded-r-md" id="remainingTask">0</span>
+                </li>
+                <li class="flex justify-center">
+                    <span class="bg-slate-900 text-white p-1 rounded-l-md tracking-wider">Completed</span>
+                    <span class="bg-sky-600 text-white p-1 rounded-r-md" id="completedTask">0</span>
+                </li>
+                <li class="flex justify-center">
+                    <span class="bg-slate-900 text-white p-1 rounded-l-md tracking-wider">total</span>
+                    <span class="bg-sky-600 text-white p-1 rounded-r-md" id="totalTask">0</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="todoList flex justify-center items-start">
+            <ul id="todos">
+                
+            </ul>
+        </div>
+
+        <div class="footer flex justify-center items-start font-semibold mt-10">
+            <h1>
+                <h1>Design by <span class="underline">Rohit nayak</span> code by <span class="underline">Omkar</span></h1>
+            </h1>
+        </div>
+    </div>
+</body>
+</html>
